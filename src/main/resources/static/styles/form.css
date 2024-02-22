@@ -1,0 +1,13 @@
+.input{
+    display: block;
+    width: 200px;
+
+}
+
+.slider{
+    width: 200px;
+}
+
+.errorMessage{
+    color: red;
+}

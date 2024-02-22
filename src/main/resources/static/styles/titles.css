@@ -1,0 +1,14 @@
+.titles{
+    font-style: italic;
+    text-align: right;
+    height: 80px;
+}
+@media screen and (max-width: 600px){
+    .titles{
+        text-align: left;
+    }
+}
+
+p {
+    margin: 5px;
+}

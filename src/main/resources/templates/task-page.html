@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Лабораторная №4</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="/scripts/task-page.js"></script>
+    <link rel="stylesheet" href="/styles/background.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/table.css">
+    <link rel="stylesheet" href="/styles/titles.css">
 </head>
 <body>
-task
+<div id="background">
+    <div class="mid">
+        <div class="container">
+            <table>
+                <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>R</th>
+                    <th>Результат</th>
+                    <th>Время отправки запроса</th>
+                    <th>Время работы скрипта</th>
+                </tr>
+                </thead>
+                <tbody id="table">
+                <tr v-for="point in points">
+                    <td>{{ point.x }}</td>
+                    <td>{{ point.y }}</td>
+                    <td>{{ point.r }}</td>
+
+                    <td v-if="point.result" class="green"> Точка попадает в область</td>
+                    <td v-else class="red"> Точка не попадает в область</td>
+
+                    <td>{{ point.requestTime }}</td>
+                    <td>{{ point.processTime }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 </body>
 </html>

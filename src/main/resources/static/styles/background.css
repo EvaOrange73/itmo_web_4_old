@@ -1,0 +1,35 @@
+body{
+    background-color: #5F87CF;
+    min-width: 700px;
+}
+
+@media screen and (max-width: 1020px){
+    .mid {
+        width: 700px;
+        margin: 10px auto;
+    }
+}
+@media screen and (min-width: 1020px){
+    .mid {
+        margin: 10px 15%;
+    }
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: #1F3F77 5px 5px 5px;
+    padding: 5px;
+    margin: 10px;
+    height: 100%;
+}
+
+.container-big {
+    display: flex;
+    min-width: 700px;
+    margin-bottom: 40px;
+}
+
+.container-small{
+    width: 50%;
+}
