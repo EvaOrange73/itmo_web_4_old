@@ -15,3 +15,38 @@
     background-color: #3399ff;
     box-shadow: none;
 }
+
+.small-button {
+    width: auto;
+    min-width: 30px;
+    height: 20px;
+
+    display: block;
+    float: left;
+    margin: 7px;
+
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    box-shadow: black 2px 2px 5px;
+}
+
+.small-button:hover{
+    background-color: #3399ff;
+    box-shadow: black 1px 1px 3px;
+}
+
+.small-button-pressed{
+    width: auto;
+    min-width: 30px;
+    height: 20px;
+
+    display: block;
+    float: left;
+    margin: 7px;
+
+    border: black solid 1px;
+    border-radius: 10px;
+
+    background-color: #3399ff;
+}
